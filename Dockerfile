@@ -2,7 +2,7 @@ FROM alpine:3.6
 MAINTAINER Code Climate <hello@codeclimate.com>
 
 RUN apk update \
- && apk add jq \
+ && apk add jq curl \
  && rm -rf /var/cache/apk/*
 
 WORKDIR /app
